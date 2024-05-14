@@ -385,45 +385,10 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
     ></script>
-    <!-- Include jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Include lettering.js for splitting text into characters -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-
-    <!-- Include Textillate.js for text animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+ 
 
     <script src="/script.js"></script>
 
-    <script>
-      const letsEffect = document.querySelector("#hover-effect");
-
-      letsEffect.addEventListener("mouseenter", (e) => {
-        letsEffect.style.color = "transparent";
-        letsEffect.style.fontWeight = "100";
-        letsEffect.style.fontStyle = "italic";
-
-        $("#hover-effect").textillate({
-          autoStart: true,
-          in: {
-            effect: "fadeIn", // Use fadeIn effect for text entrance
-            delayScale: 1.5, // Delay factor for each character
-            delay: 50, // Delay in milliseconds between each character
-          },
-          loop: true,
-        });
-      });
-
-      letsEffect.addEventListener("mouseleave", (e) => {
-        $("#hover-effect").textillate({
-          out: {
-            effect: "fadeOut", // Use fadeOut effect for text exit
-            delayScale: 1.5, // Delay factor for each character
-            delay: 30, // Delay in milliseconds between each character
-          },
-        });
-      });
-    </script>
+   
   </body>
 </html>
